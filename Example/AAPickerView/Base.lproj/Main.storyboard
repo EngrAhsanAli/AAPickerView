@@ -1,25 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cnN-8R-BAH">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo AAPickerView-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AAPickerView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnL-ce-2u7" customClass="AAPickerView" customModule="AAPickerView">
+                                <rect key="frame" x="16" y="207" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GiB-DX-9hn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Option" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HR-UQ-hQE">
+                                <rect key="frame" x="16" y="161" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cZs-DB-lUr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9u-8c-Cpk">
+                                <rect key="frame" x="16" y="319" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8ra-WD-cB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-uI-glM" customClass="AAPickerView" customModule="AAPickerView">
+                                <rect key="frame" x="16" y="357" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IOD-tb-uEa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wnL-ce-2u7" firstAttribute="trailing" secondItem="V9u-8c-Cpk" secondAttribute="trailing" id="2MO-Zo-7tz"/>
+                            <constraint firstItem="5HR-UQ-hQE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="5BX-fF-dzn"/>
+                            <constraint firstItem="5HR-UQ-hQE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="97" id="7cs-nW-pdR"/>
+                            <constraint firstItem="V9u-8c-Cpk" firstAttribute="trailing" secondItem="kGg-uI-glM" secondAttribute="trailing" id="FgV-Fq-ydH"/>
+                            <constraint firstItem="5HR-UQ-hQE" firstAttribute="leading" secondItem="wnL-ce-2u7" secondAttribute="leading" id="NNb-ZG-FMt"/>
+                            <constraint firstItem="V9u-8c-Cpk" firstAttribute="top" secondItem="wnL-ce-2u7" secondAttribute="bottom" constant="82" id="P4I-c2-JWw"/>
+                            <constraint firstItem="kGg-uI-glM" firstAttribute="top" secondItem="V9u-8c-Cpk" secondAttribute="bottom" constant="8" symbolic="YES" id="QYj-ze-MSD"/>
+                            <constraint firstItem="wnL-ce-2u7" firstAttribute="top" secondItem="5HR-UQ-hQE" secondAttribute="bottom" constant="16" id="Rls-Vt-wEc"/>
+                            <constraint firstItem="V9u-8c-Cpk" firstAttribute="leading" secondItem="kGg-uI-glM" secondAttribute="leading" id="SKJ-0F-Sfc"/>
+                            <constraint firstItem="wnL-ce-2u7" firstAttribute="leading" secondItem="V9u-8c-Cpk" secondAttribute="leading" id="fTR-dP-v4T"/>
+                            <constraint firstItem="5HR-UQ-hQE" firstAttribute="trailing" secondItem="wnL-ce-2u7" secondAttribute="trailing" id="nvV-UI-d7q"/>
+                            <constraint firstItem="5HR-UQ-hQE" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qBz-iz-bM3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Demo AAPickerView" id="jtp-oT-8l9"/>
+                    <connections>
+                        <outlet property="picker1" destination="wnL-ce-2u7" id="cpq-Pf-2Ta"/>
+                        <outlet property="picker2" destination="kGg-uI-glM" id="6aA-0Q-zRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1113.75" y="123.59154929577466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kwa-yE-G10">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cnN-8R-BAH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9eT-c2-Aku">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="7BT-Ya-7Ga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUe-Km-V8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
         </scene>
     </scenes>
 </document>

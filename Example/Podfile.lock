@@ -1,0 +1,16 @@
+PODS:
+  - AAPickerView (0.1.0)
+
+DEPENDENCIES:
+  - AAPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  AAPickerView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AAPickerView: 28d7d1c3ba6f0bb1adde56d87e2d3d22c640bb3b
+
+PODFILE CHECKSUM: d7d491aec55aaed967cf42a504f7384b64aadd65
+
+COCOAPODS: 1.2.0.beta.3

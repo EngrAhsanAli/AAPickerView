@@ -1,0 +1,6 @@
+framework module Pods_AAPickerView_Example {
+  umbrella header "Pods-AAPickerView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

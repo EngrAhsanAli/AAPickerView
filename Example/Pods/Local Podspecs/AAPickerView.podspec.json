@@ -1,0 +1,22 @@
+{
+  "name": "AAPickerView",
+  "version": "0.1.0",
+  "summary": "A short description of AAPickerView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/AAPickerView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Engr. Ahsan Ali": "hafiz.m.ahsan.ali@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AAPickerView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AAPickerView/Classes/**/*"
+}
