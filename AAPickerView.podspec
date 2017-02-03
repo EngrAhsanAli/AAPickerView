@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'AAPickerView'
-s.version          = '1.0.0'
+s.version          = '0.1.0'
 s.summary          = 'AAPickerView is simple and easy-to-use implementation for `UITextField` to use as `UIPickerView` and `UIDatePicker` written in swift. '
 
 s.description      = <<-DESC
@@ -8,6 +8,7 @@ AAPickerView allows to transform `UITextField` as `UIPickerView` and `UIDatePick
 DESC
 
 s.homepage         = 'https://github.com/EngrAhsanAli/AAPickerView'
+s.screenshots     = 'https://raw.githubusercontent.com/EngrAhsanAli/AAPickerView/master/Screenshots/AAPickerView.png'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
 s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPickerView.git', :tag => s.version.to_s }

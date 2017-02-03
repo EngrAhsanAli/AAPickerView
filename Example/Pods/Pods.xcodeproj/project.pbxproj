@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		14EEB2FE1F3D01716D2D5FE5549F21B4 /* AAPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC07F556D2175C5024D6BFBE9059F1C6 /* AAPickerView-dummy.m */; };
 		24677DE3F0BA91D86EC3E5B7722291FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		420FBBA81E45243B00584996 /* AAPickerView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FBBA71E45243B00584996 /* AAPickerView+Helper.swift */; };
 		4273939E1E1FD3DA0088AA46 /* AAPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4273939D1E1FD3DA0088AA46 /* AAPickerView.swift */; };
 		636481CC45C310FFB484795A486D84F9 /* AAPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6847EA0D39CFBF634B1C5F52C3E348 /* AAPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64DC473F5BCBDFE9A74BE88B44610839 /* Pods-AAPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB770AB2B51973A69CA6C9685C901D05 /* Pods-AAPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69FA63FE22C23DEE51DEE51CA4EB1F00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		7AB9F0360D45C1AFD3F18959675CBA0E /* Pods-AAPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E363E1099159A20F4BBE975B6133 /* Pods-AAPickerView_Example-dummy.m */; };
-		969CFA0E2466A8D7289A8F12D974006A /* Pods-AAPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 362E35A5D0A1A9F2C1BC7DDF75D480E5 /* Pods-AAPickerView_Tests-dummy.m */; };
 		D300C87951055C9B6A7D3077FA0FAFF4 /* Pods-AAPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91518BC1D77D354DEA621887AF5B1E05 /* Pods-AAPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC66A5321BC6DCDB9A68AF84F1E01B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -31,16 +29,14 @@
 
 /* Begin PBXFileReference section */
 		0F5BFF229BCA85C057B114A5B75A28E1 /* Pods_AAPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DBCC7F88D074DF318FB810BB15AE32F /* Pods-AAPickerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAPickerView_Tests.modulemap"; sourceTree = "<group>"; };
 		28E59AC0213508F2563077A79DC1725B /* Pods-AAPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		33357DF09001F0FD448520CF43E3E893 /* AAPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AA05985E91A31BAFA606202C685E1B /* Pods-AAPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		362E35A5D0A1A9F2C1BC7DDF75D480E5 /* Pods-AAPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
+		420FBBA71E45243B00584996 /* AAPickerView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAPickerView+Helper.swift"; sourceTree = "<group>"; };
 		4273939D1E1FD3DA0088AA46 /* AAPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPickerView.swift; sourceTree = "<group>"; };
 		59FF09670C1FC8505ADB4DA3A37E58DB /* Pods-AAPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5A388A58346E26AAD5460998EA0949FE /* Pods-AAPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		66927C3909C6DA3264AF4A3917E1AABB /* AAPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAPickerView.xcconfig; sourceTree = "<group>"; };
-		699ADF89D47CC65FD0E9AB922B125AA5 /* Pods-AAPickerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAPickerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6BFD1EBB20782FA79A36882BFACD9173 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70CD6F94B2459DA0514EE2C72E539A47 /* Pods-AAPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAPickerView_Example.modulemap"; sourceTree = "<group>"; };
 		853FD139C6E287B3910A91CF43C40C79 /* AAPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAPickerView.modulemap; sourceTree = "<group>"; };
@@ -48,31 +44,15 @@
 		91518BC1D77D354DEA621887AF5B1E05 /* Pods-AAPickerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPickerView_Example-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A18021F57A8F4970052D3116A6A6790A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB770AB2B51973A69CA6C9685C901D05 /* Pods-AAPickerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPickerView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B6E3E363E1099159A20F4BBE975B6133 /* Pods-AAPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPickerView_Example-dummy.m"; sourceTree = "<group>"; };
 		BF0F37BE3121E1AC32DF632D4F147119 /* Pods-AAPickerView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPickerView_Example-resources.sh"; sourceTree = "<group>"; };
 		C978E76E353A52FFA62E8029C7E34F83 /* AAPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPickerView-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CE4B4A082E3C6F8458008FA9874517F2 /* Pods-AAPickerView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPickerView_Tests-resources.sh"; sourceTree = "<group>"; };
 		D3FCF227FADFA9078307764B20305F9B /* Pods-AAPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC07F556D2175C5024D6BFBE9059F1C6 /* AAPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAPickerView-dummy.m"; sourceTree = "<group>"; };
-		DD966E70DB3740C1CBC11F5DCD0DE3A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFC2E7E3884310EC017B79D5EDC2E5B6 /* Pods-AAPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E3CEA51C624C528C5E7AF79A5AAB1E89 /* Pods_AAPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5A40E78903060E9A457512595E3B73A /* Pods-AAPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0FFD49AB7678CC4D86C6F6695AD51BA /* Pods-AAPickerView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPickerView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		FBF3AAE18BA3A80ED5CD2CECB8DD8C0F /* Pods-AAPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FD4071D09C594C8FE5D4308C5F2484A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69FA63FE22C23DEE51DEE51CA4EB1F00 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9334647C3A4F110C8F15E8AC034E19D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				627695665126F69A59FFAEC0AAA9D378 /* Pods-AAPickerView_Example */,
-				95847DA44D2B8EC16481840E43A687C9 /* Pods-AAPickerView_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -168,24 +147,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		95847DA44D2B8EC16481840E43A687C9 /* Pods-AAPickerView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DD966E70DB3740C1CBC11F5DCD0DE3A1 /* Info.plist */,
-				1DBCC7F88D074DF318FB810BB15AE32F /* Pods-AAPickerView_Tests.modulemap */,
-				E5A40E78903060E9A457512595E3B73A /* Pods-AAPickerView_Tests-acknowledgements.markdown */,
-				699ADF89D47CC65FD0E9AB922B125AA5 /* Pods-AAPickerView_Tests-acknowledgements.plist */,
-				362E35A5D0A1A9F2C1BC7DDF75D480E5 /* Pods-AAPickerView_Tests-dummy.m */,
-				F0FFD49AB7678CC4D86C6F6695AD51BA /* Pods-AAPickerView_Tests-frameworks.sh */,
-				CE4B4A082E3C6F8458008FA9874517F2 /* Pods-AAPickerView_Tests-resources.sh */,
-				AB770AB2B51973A69CA6C9685C901D05 /* Pods-AAPickerView_Tests-umbrella.h */,
-				DFC2E7E3884310EC017B79D5EDC2E5B6 /* Pods-AAPickerView_Tests.debug.xcconfig */,
-				FBF3AAE18BA3A80ED5CD2CECB8DD8C0F /* Pods-AAPickerView_Tests.release.xcconfig */,
-			);
-			name = "Pods-AAPickerView_Tests";
-			path = "Target Support Files/Pods-AAPickerView_Tests";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +160,6 @@
 			children = (
 				33357DF09001F0FD448520CF43E3E893 /* AAPickerView.framework */,
 				0F5BFF229BCA85C057B114A5B75A28E1 /* Pods_AAPickerView_Example.framework */,
-				E3CEA51C624C528C5E7AF79A5AAB1E89 /* Pods_AAPickerView_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				4273939D1E1FD3DA0088AA46 /* AAPickerView.swift */,
+				420FBBA71E45243B00584996 /* AAPickerView+Helper.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -225,14 +186,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4C1FDD429A60466D9EFA16AF3CF6FD85 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64DC473F5BCBDFE9A74BE88B44610839 /* Pods-AAPickerView_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B90D40C8708EC98BA1186CBAA85AE22A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,23 +221,6 @@
 			name = "Pods-AAPickerView_Example";
 			productName = "Pods-AAPickerView_Example";
 			productReference = 0F5BFF229BCA85C057B114A5B75A28E1 /* Pods_AAPickerView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6DD5608B7F50560BC47A007271F8FCDF /* Pods-AAPickerView_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAF4C87FB64A167C6027A2407FF27661 /* Build configuration list for PBXNativeTarget "Pods-AAPickerView_Tests" */;
-			buildPhases = (
-				48E748D8A2AA7DE2307679FE0E60EAE0 /* Sources */,
-				1FD4071D09C594C8FE5D4308C5F2484A /* Frameworks */,
-				4C1FDD429A60466D9EFA16AF3CF6FD85 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-AAPickerView_Tests";
-			productName = "Pods-AAPickerView_Tests";
-			productReference = E3CEA51C624C528C5E7AF79A5AAB1E89 /* Pods_AAPickerView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		97DDD7EDFA7417BBB01CB98ED2419BC3 /* AAPickerView */ = {
@@ -335,20 +271,11 @@
 			targets = (
 				97DDD7EDFA7417BBB01CB98ED2419BC3 /* AAPickerView */,
 				52EB3C4C754F4B2F3F8FED1A17D59A86 /* Pods-AAPickerView_Example */,
-				6DD5608B7F50560BC47A007271F8FCDF /* Pods-AAPickerView_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		48E748D8A2AA7DE2307679FE0E60EAE0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				969CFA0E2466A8D7289A8F12D974006A /* Pods-AAPickerView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A147736331CF4F0F520F5BC651962A6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +290,7 @@
 			files = (
 				4273939E1E1FD3DA0088AA46 /* AAPickerView.swift in Sources */,
 				14EEB2FE1F3D01716D2D5FE5549F21B4 /* AAPickerView-dummy.m in Sources */,
+				420FBBA81E45243B00584996 /* AAPickerView+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,41 +337,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3D89309855FDC4E8BF8FBC37DB08C1AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFC2E7E3884310EC017B79D5EDC2E5B6 /* Pods-AAPickerView_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AAPickerView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AAPickerView_Tests/Pods-AAPickerView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPickerView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -555,41 +448,6 @@
 			};
 			name = Release;
 		};
-		9C114C7117A6275D0E1FDA53514E0239 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBF3AAE18BA3A80ED5CD2CECB8DD8C0F /* Pods-AAPickerView_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AAPickerView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AAPickerView_Tests/Pods-AAPickerView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPickerView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -696,15 +554,6 @@
 			buildConfigurations = (
 				84259C04EC994C713C52D6574508727E /* Debug */,
 				4AD4616EF4427235FFEF431040F3CB96 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAF4C87FB64A167C6027A2407FF27661 /* Build configuration list for PBXNativeTarget "Pods-AAPickerView_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D89309855FDC4E8BF8FBC37DB08C1AA /* Debug */,
-				9C114C7117A6275D0E1FDA53514E0239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

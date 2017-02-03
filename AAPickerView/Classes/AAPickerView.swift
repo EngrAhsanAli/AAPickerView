@@ -6,13 +6,7 @@
 //  Copyright (c) 2017 AA-Creations. All rights reserved.
 //
 
-import UIKit
-
-public enum AAPickerType {
-    case StringPicker
-    case DatePicker
-}
-
+/// MARK:- AAPickerView
 open class AAPickerView: UITextField {
     
     open var pickerType: AAPickerType? {
@@ -36,7 +30,7 @@ open class AAPickerView: UITextField {
     }
     
     // For DatePicker
-    open let dateFormatter = DateFormatter()
+    open var dateFormatter = DateFormatter()
     open var dateDidChange: ((Date) -> Void)?
     
     open var datePicker: UIDatePicker? {
@@ -139,18 +133,4 @@ open class AAPickerView: UITextField {
 }
 
 
-//MARK: UIPickerViewDelegate
 
-extension AAPickerView: UIPickerViewDelegate {
-    
-    open func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return stringPickerData?.count ?? 0
-    }
-    
-    open func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let label = pickerRow
-        label.text = stringPickerData![row]
-        return label
-    }
-
-}
