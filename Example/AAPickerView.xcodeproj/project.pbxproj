@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420FBBAA1E4525CF00584996 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FBBA91E4525CF00584996 /* Demo.swift */; };
+		42AEAE001E48B9C000B07F51 /* DemoDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEADFF1E48B9C000B07F51 /* DemoDatePicker.swift */; };
+		42AEAE021E48B9CC00B07F51 /* DemoStringPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEAE011E48B9CC00B07F51 /* DemoStringPicker.swift */; };
 		4BD3D76F143C09080B502690 /* Pods_AAPickerView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0EDEFA97D06D020397EEE3 /* Pods_AAPickerView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -18,7 +19,8 @@
 
 /* Begin PBXFileReference section */
 		3894FC72A29D76A4FD1E651A /* Pods_AAPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		420FBBA91E4525CF00584996 /* Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		42AEADFF1E48B9C000B07F51 /* DemoDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDatePicker.swift; sourceTree = "<group>"; };
+		42AEAE011E48B9CC00B07F51 /* DemoStringPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoStringPicker.swift; sourceTree = "<group>"; };
 		53CC6F7D03C85BB09C6C16AF /* Pods-AAPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAPickerView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAPickerView_Example/Pods-AAPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AAPickerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAPickerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +94,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				420FBBA91E4525CF00584996 /* Demo.swift */,
+				42AEADFF1E48B9C000B07F51 /* DemoDatePicker.swift */,
+				42AEAE011E48B9CC00B07F51 /* DemoStringPicker.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -243,9 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42AEAE001E48B9C000B07F51 /* DemoDatePicker.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				420FBBAA1E4525CF00584996 /* Demo.swift in Sources */,
+				42AEAE021E48B9CC00B07F51 /* DemoStringPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
