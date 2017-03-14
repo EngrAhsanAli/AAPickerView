@@ -105,7 +105,7 @@ github "EngrAhsanAli/AAPickerView" "master"
 ```
 
 Then import the library in all files where you use it:
-```ruby
+```swift
 import AAPickerView
 ```
 
@@ -127,7 +127,7 @@ If you prefer not to use either of the above mentioned dependency managers, you 
 ##Create instance of AAPickerView
 
 You just need to assign `AAPickerView` class to your `UITextField` and make the outlet:
-```ruby
+```swift
 @IBOutlet weak var picker: AAPickerView!
 ```
 
@@ -145,7 +145,7 @@ Define type of picker you want to use in your text field. There are two types of
 
 Assign one of them as follow:
 
-```
+```swift
 picker1.pickerType = .StringPicker
 picker2.pickerType = .DatePicker
 ```
@@ -155,7 +155,7 @@ picker2.pickerType = .DatePicker
 ##Customise the toolbar
 
 You can change `UIToolbar` colours like:
-```
+```swift
 picker.toolbar.barTintColor = .darkGray
 picker.toolbar.tintColor = .black
 ```
@@ -165,7 +165,7 @@ picker.toolbar.tintColor = .black
 ##Customise StringPicker Label
 
 You can get and customise the `StringPicker` label as `UILabel`:
-```
+```swift
 let label = picker.pickerRow
 label.font = UIFont(name: "American Typewriter", size: 30)
 ```
@@ -175,7 +175,7 @@ label.font = UIFont(name: "American Typewriter", size: 30)
 ##Customise UIDatePicker & DateFormatter
 
 You can get your `UIDatePicker` and `DateFormatter` which is using behind your `UITextField` as:
-```
+```swift
 let datePicker = picker.datePicker
 datePicker?.datePickerMode = .date
 
@@ -191,14 +191,14 @@ dateFormatter.dateFormat = "dd/MM/YYYY"
 You can listen the changes of data simply by using the following callback methods:
 
 - StringPicker:
-```ruby
+```swift
 picker.stringDidChange = { index in
 print("selectedString ", self.stringData[index])
 }
 ```
 
 - DatePicker
-```ruby
+```swift
 picker.dateDidChange = { date in
 print("selectedDate ", date )
 }
