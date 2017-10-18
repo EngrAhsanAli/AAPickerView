@@ -77,7 +77,10 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
+// Swift 3.2+ Compatibility
 pod 'AAPickerView'
+// Swift 4 Compatibility
+pod 'AAPickerView', '~> 0.1.1'
 end
 
 ```
