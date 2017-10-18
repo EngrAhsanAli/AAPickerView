@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'AAPickerView'
-s.version          = '0.1.0'
+s.version          = '0.1.1'
 s.summary          = 'AAPickerView is simple and easy-to-use implementation for `UITextField` to use as `UIPickerView` and `UIDatePicker` written in swift. '
 
 s.description      = <<-DESC

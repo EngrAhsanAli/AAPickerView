@@ -97,7 +97,7 @@ open class AAPickerView: UITextField {
         return toolBar
     }
 
-    func doneAction() {
+    @objc func doneAction() {
         
         guard let type = pickerType else {
             return
@@ -125,7 +125,7 @@ open class AAPickerView: UITextField {
         resignFirstResponder()
     }
     
-    func cancelAction() {
+    @objc func cancelAction() {
         resignFirstResponder()
     }
     
