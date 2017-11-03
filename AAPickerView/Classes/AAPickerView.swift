@@ -39,7 +39,7 @@ open class AAPickerView: UITextField {
         }
         set {
             inputView = newValue
-            dateFormatter.dateFormat = "MM/dd/YYYY"
+            dateFormatter.dateFormat = "MM/dd/yyyy"
             
         }
     }
