@@ -63,6 +63,7 @@ open class AAPickerView: UITextField {
             return self.inputView as? UIPickerView
         }
         set(picker) {
+            print("picker ", picker)
             picker?.delegate = self
             inputView = picker
         }

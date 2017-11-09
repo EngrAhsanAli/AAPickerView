@@ -17,10 +17,13 @@ public enum AAPickerType {
 }
 
 //MARK: UIPickerViewDelegate
-extension AAPickerView: UIPickerViewDelegate {
-    
-    open func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+extension AAPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return stringPickerData?.count ?? 0
+    }
+    
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+         return 1
     }
     
     open func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
