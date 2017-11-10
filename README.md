@@ -80,7 +80,7 @@ target '<Your Target Name>' do
 // Swift 3.2+ Compatibility
 pod 'AAPickerView'
 // Swift 4 Compatibility
-pod 'AAPickerView', '~> 0.1.1'
+pod 'AAPickerView', '~> 0.1.2'
 end
 
 ```
