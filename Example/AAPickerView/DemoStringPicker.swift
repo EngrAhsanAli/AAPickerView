@@ -28,20 +28,25 @@ class DemoStringPicker: UIViewController {
 
     
     func configPicker() {
-        picker.pickerType = .StringPicker
+
         
         let stringData = ["AVFoundation","Accelerate","AddressBook","AddressBookUI","AssetsLibrary"]
-        picker.stringPickerData = stringData
+
+        picker.pickerType = .string(data: stringData)
+        picker.heightForRow = 40
         picker.pickerRow.font = UIFont(name: "American Typewriter", size: 30)
         
         picker.toolbar.barTintColor = .darkGray
         picker.toolbar.tintColor = .black
         
-        picker.stringDidChange = { index in
+        picker.valueDidSelected = { (index) in
             
-            print("selectedString ", stringData[index])
+            print("selectedString ", stringData[index as! Int])
             
-            
+        }
+        
+        picker.valueDidChange = { value in
+            print(value)
         }
     }
     

@@ -12,14 +12,14 @@
 /// - StringPicker: string picker
 /// - DatePicker: date picker
 public enum AAPickerType {
-    case StringPicker
-    case DatePicker
+    case string(data: [String])
+    case date
 }
 
 //MARK: UIPickerViewDelegate
 extension AAPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return stringPickerData?.count ?? 0
+        return stringPickerData.count
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -28,8 +28,18 @@ extension AAPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     
     open func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let label = pickerRow
-        label.text = stringPickerData![row]
+        label.text = stringPickerData[row]
         return label
+    }
+
+    
+    public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return heightForRow
+    }
+    
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        valueDidChange?(row)
+        sendActions(for: .valueChanged)
     }
     
 }

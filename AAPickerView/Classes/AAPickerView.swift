@@ -9,20 +9,22 @@
 /// MARK:- AAPickerView
 open class AAPickerView: UITextField {
     
-    open var pickerType: AAPickerType? {
+    /// Callback for end editing
+    open var valueDidSelected: ((Any) -> Void)?
+    
+    /// Callback for value change
+    open var valueDidChange: ((Any) -> Void)?
+    
+    open var pickerType: AAPickerType = .date {
         
         didSet {
-            guard let type = pickerType else {
-                return
-            }
             
-            switch type {
-            case .DatePicker:
+            switch pickerType {
+            case .date:
                 datePicker = UIDatePicker()
-                break
-            case .StringPicker:
+            case .string(let stringData):
                 stringPicker = UIPickerView()
-                break
+                stringPickerData = stringData
             }
             
             inputAccessoryView = toolbar
@@ -31,7 +33,6 @@ open class AAPickerView: UITextField {
     
     // For DatePicker
     open var dateFormatter = DateFormatter()
-    open var dateDidChange: ((Date) -> Void)?
     
     open var datePicker: UIDatePicker? {
         get {
@@ -46,8 +47,9 @@ open class AAPickerView: UITextField {
     
     // For String Picker
     
-    open var stringPickerData: [String]?
-    open var stringDidChange: ((Int) -> Void)?
+    var stringPickerData = [String]()
+    
+    open var heightForRow: CGFloat = 30
     
     open var pickerRow: UILabel {
         let pickerLabel = UILabel()
@@ -76,12 +78,12 @@ open class AAPickerView: UITextField {
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
-        toolBar.tintColor = UIColor.blue
+        toolBar.tintColor = .blue
         toolBar.sizeToFit()
         
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done,
                                          target: self,
-                                         action: #selector(AAPickerView.doneAction))
+                                         action: #selector(doneAction))
 
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
                                           target: nil,
@@ -89,7 +91,7 @@ open class AAPickerView: UITextField {
         
         let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel,
                                            target: self,
-                                           action: #selector(AAPickerView.cancelAction))
+                                           action: #selector(cancelAction))
         
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
@@ -97,31 +99,24 @@ open class AAPickerView: UITextField {
         return toolBar
     }
 
+
     @objc func doneAction() {
-        
-        guard let type = pickerType else {
-            return
-        }
-        
-        switch type {
-        case .DatePicker:
+                
+        switch pickerType {
+        case .date:
             
             let date = datePicker!.date
             self.text = dateFormatter.string(from: date)
-            
-            dateDidChange?(date)
-            
-            break
-        case .StringPicker:
+            valueDidSelected?(date)
+
+        case .string:
             let row = stringPicker!.selectedRow(inComponent: 0)
-            self.text = stringPickerData![row]
-            
-            stringDidChange?(row)
-            
-            break
+            self.text = stringPickerData[row]
+            valueDidSelected?(row)
             
         }
         
+        sendActions(for: .editingDidEnd)
         resignFirstResponder()
     }
     
@@ -129,8 +124,4 @@ open class AAPickerView: UITextField {
         resignFirstResponder()
     }
     
-    
 }
-
-
-

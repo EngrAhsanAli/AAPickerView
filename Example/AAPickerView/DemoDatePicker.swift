@@ -26,13 +26,13 @@ class DemoDatePicker: UIViewController {
     }
     
     func configPicker() {
-        picker.pickerType = .DatePicker
+        picker.pickerType = .date
         
         picker.datePicker?.datePickerMode = .date
         picker.dateFormatter.dateFormat = "dd/MM/YYYY"
         
-        picker.dateDidChange = { date in
-            print("selectedDate ", date )
+        picker.valueDidSelected = { date in
+            print("selectedDate ", date as! Date )
         }
     }
     
