@@ -80,7 +80,7 @@ target '<Your Target Name>' do
 // Swift 3.2+ Compatibility
 pod 'AAPickerView'
 // Swift 4 Compatibility
-pod 'AAPickerView', '~> 0.1.2'
+pod 'AAPickerView', '~> 1.0'
 end
 
 ```
@@ -149,8 +149,8 @@ Define type of picker you want to use in your text field. There are two types of
 Assign one of them as follow:
 
 ```swift
-picker1.pickerType = .StringPicker
-picker2.pickerType = .DatePicker
+picker1.pickerType = .string(data: #String collection#)
+picker2.pickerType = .date
 ```
 
 <div id='section-id-112'/>
@@ -195,15 +195,15 @@ You can listen the changes of data simply by using the following callback method
 
 - StringPicker:
 ```swift
-picker.stringDidChange = { index in
-print("selectedString ", self.stringData[index])
+picker.valueDidSelected = { (index) in
+    print("selectedString ", stringData[index as! Int])
 }
 ```
 
 - DatePicker
 ```swift
-picker.dateDidChange = { date in
-print("selectedDate ", date )
+picker.valueDidSelected = { date in
+    print("selectedDate ", date as! Date )
 }
 ```
 
