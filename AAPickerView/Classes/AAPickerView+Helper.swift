@@ -6,7 +6,6 @@
 //  Copyright (c) 2017 AA-Creations. All rights reserved.
 //
 
-
 /// Picker View type
 ///
 /// - StringPicker: string picker
