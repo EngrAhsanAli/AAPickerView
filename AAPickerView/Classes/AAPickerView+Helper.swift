@@ -6,6 +6,8 @@
 //  Copyright (c) 2017 AA-Creations. All rights reserved.
 //
 
+let AA_TAG = "AAPickerView:- "
+
 /// Picker View type
 ///
 /// - StringPicker: string picker
