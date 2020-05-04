@@ -13,7 +13,7 @@ extension UIView {
     @discardableResult
     func aa_addDataPicker(_ placeholder: String, callback: @escaping ((Any) -> ())) -> AAPickerView {
         let picker = AAPickerView()
-        picker.text = placeholder
+        picker.placeholder = placeholder
         picker.pickerType = .date
         picker.datePicker?.datePickerMode = .date
         picker.dateFormatter.dateFormat = "dd/MM/YYYY"
@@ -26,10 +26,11 @@ extension UIView {
     @discardableResult
     func aa_addStringPicker(_ placeholder: String, data: [String], callback: @escaping ((Any) -> ())) -> AAPickerView {
         let picker = AAPickerView()
-        picker.text = placeholder
+        picker.placeholder = placeholder
         picker.pickerType = .string(data: data)
         picker.valueDidSelected = callback
         aa_addAndFitSubview(picker, insets: .zero)
+        picker.sendActions(for: .touchUpInside)
         return picker
     }
     
