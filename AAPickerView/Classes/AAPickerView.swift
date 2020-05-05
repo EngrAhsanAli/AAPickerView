@@ -127,7 +127,7 @@ open class AAPickerView: UITextField {
     
 }
 
-
+// MARK:- Restrict textfield picker view not to copy paste or edit the values
 extension AAPickerView {
     
     open override func caretRect(for position: UITextPosition) -> CGRect {

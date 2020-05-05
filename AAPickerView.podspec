@@ -16,5 +16,6 @@ s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPickerView.git
 s.ios.deployment_target = '8.0'
 
 s.source_files = 'AAPickerView/Classes/**/*'
+s.swift_version = '5.0'
 
 end
