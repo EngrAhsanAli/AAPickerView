@@ -8,6 +8,7 @@
 import UIKit
 
 // MARK:- UIView extensions to add and fit quickly in some view
+@available(iOS 9.0, *)
 public extension UIView {
     
     @discardableResult
@@ -15,13 +16,13 @@ public extension UIView {
         aa_removeSubViews()
         let picker = AAPickerView()
         picker.placeholder = placeholder
+        picker.textAlignment = .center
         picker.pickerType = .date
         picker.datePicker?.datePickerMode = .date
         picker.dateFormatter.dateFormat = "dd/MM/YYYY"
         picker.valueDidSelected = callback
-        picker.toolbar.barStyle = .black
-        addSubview(picker)
-        aa_fitInSuperview(with: insets)
+        picker.sizeToFit()
+        aa_addConstrainedSubview(picker)
         return picker
     }
     
@@ -37,9 +38,9 @@ public extension UIView {
             callback($0)
         }
         picker.sizeToFit()
-        addSubview(picker)
-        aa_fitInSuperview(with: insets)
+        aa_addConstrainedSubview(picker)
         return picker
+        
       }
       
     
@@ -55,34 +56,14 @@ fileprivate extension UIView {
         self.subviews.forEach {$0.removeFromSuperview()}
     }
     
-    func aa_fitInSuperview(with insets: UIEdgeInsets = .zero) {
-        guard let superview = superview else {
-            assertionFailure("\(AA_TAG) fitInSuperview was called but view was not in a view hierarchy.")
-            return
-        }
-
-        let applyInset: (NSLayoutConstraint.Attribute, UIEdgeInsets) -> CGFloat = {
-            switch $0 {
-            case .top: return $1.top
-            case .bottom: return -$1.bottom
-            case .left: return $1.left
-            case .right: return -$1.right
-            default:
-                return 0
-            }
-        }
-
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let attributes = [NSLayoutConstraint.Attribute.top, .left, .right, .bottom]
-        superview.addConstraints(attributes.map {
-            return NSLayoutConstraint(item: self,
-                                      attribute: $0,
-                                      relatedBy: .equal,
-                                      toItem: superview,
-                                      attribute: $0,
-                                      multiplier: 1,
-                                      constant: applyInset($0, insets))
-        })
+    
+    @available(iOS 9.0, *)
+    func aa_addConstrainedSubview(_ subview: UIView) {
+        addSubview(subview)
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        subview.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        subview.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        subview.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        subview.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
 }
