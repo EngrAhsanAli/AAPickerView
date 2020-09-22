@@ -17,6 +17,21 @@ public enum AAPickerType {
     case date
 }
 
+public func ==(lhs: AAPickerType, rhs: AAPickerType) -> Bool {
+    switch (lhs, rhs) {
+    case let (.string(a), .string(b)):
+        return a == b
+    case (.date, .date):
+        return true
+    default:
+        return false
+    }
+}
+
+public func !=(lhs: AAPickerType, rhs: AAPickerType) -> Bool {
+    return !(lhs == rhs)
+}
+
 //MARK: UIPickerViewDelegate
 extension AAPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
