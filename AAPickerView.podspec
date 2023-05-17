@@ -13,7 +13,7 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
 s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPickerView.git', :tag => s.version.to_s }
 
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '11.0'
 
 s.source_files = 'AAPickerView/Classes/**/*'
 s.swift_version = '5.0'
